@@ -1,0 +1,8 @@
+alfresco.log*
+solr.log*
+alf_data_dev
+repo/target
+runner/target
+share/target
+test-allinone-220-repo-amp/target
+test-allinone-220-share-amp/target

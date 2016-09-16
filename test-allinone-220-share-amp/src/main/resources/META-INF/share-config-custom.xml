@@ -1,0 +1,99 @@
+<!-- Share configuration related to this particular Share module extension, such as:
+     - Doclib action config
+     - Form config
+     - Aspect and Type config
+
+    Note. Any configuration related to the whole Share.war webapp
+           (i.e. not specific to this share extension) should be
+            placed in the environment specific config:
+             alfresco-allinone/share/src/main/resources/alfresco/web-extension/share-config-custom.xml file
+     -->
+<alfresco-config>
+
+  <config evaluator="string-compare" condition="DocLibActions">
+
+    <actionGroups>
+        <actionGroup id="document-browse">
+            <action index="10" id="document-approve" icon="document-approve-color" />
+            <action index="11" id="document-reject" icon="document-reject-color" />
+
+            <action index="100" id="document-edit-online" />
+            <action index="110" id="document-edit-online-aos" />
+            <action index="111" id="google-docs-edit-action-link"/>
+            <action index="112" id="google-docs-checkin-action-link"/>
+            <action index="113" id="google-docs-resume-action-link"/>
+            <action index="114" id="google-docs-cancel-action-link"/>
+            <action index="120" id="document-edit-offline" />
+            <action index="130" id="document-inline-edit" />
+            <action index="140" id="document-upload-new-version" />
+            <action index="141" id="document-cancel-editing" />
+            <action index="142" id="document-cancel-editing-unlock" icon="document-cancel-editing"/>
+
+            <action index="150" id="document-download" />
+            <action index="155" id="document-view-content" />
+            <action index="160" id="document-locate" />
+            <action index="170" id="document-edit-properties" />
+            <action index="175" id="manageassoc" />
+            <action index="180" id="document-change-type" />
+            <action index="190" id="document-manage-granular-permissions" />
+            <action index="200" id="document-manage-repo-permissions" />
+            <action index="205" id="document-manage-aspects" />
+            <action index="210" id="document-copy-to" />
+            <action index="220" id="document-move-to" />
+            <action index="230" id="document-delete" />
+            <action index="240" id="document-cloud-sync" />
+            <action index="250" id="document-cloud-unsync" />
+            <action index="260" id="document-view-in-cloud" />
+            <action index="270" id="document-request-sync"/>
+            <action index="280" id="document-view-in-source-repository" />
+
+            <action index="290" id="document-view-original" />
+            <action index="300" id="document-view-working-copy" />
+            <action index="330" id="document-assign-workflow" />
+            <action index="360" id="document-view-googlemaps" />
+
+        </actionGroup>
+
+        <actionGroup id="document-details">
+            <action index="10" id="document-approve" icon="document-approve-color" />
+            <action index="11" id="document-reject" icon="document-reject-color" />
+
+            <action index="100" id="document-edit-online" />
+            <action index="110" id="document-edit-online-aos" />
+            <action index="111" id="google-docs-edit-action-link"/>
+            <action index="112" id="google-docs-checkin-action-link"/>
+            <action index="113" id="google-docs-resume-action-link"/>
+            <action index="114" id="google-docs-cancel-action-link"/>
+            <action index="120" id="document-edit-offline" />
+            <action index="130" id="document-inline-edit" />
+            <action index="140" id="document-upload-new-version" />
+            <action index="141" id="document-cancel-editing" />
+            <action index="142" id="document-cancel-editing-unlock" icon="document-cancel-editing"/>
+
+            <action index="150" id="document-download" />
+            <action index="160" id="document-view-content" />
+            <action index="170" id="document-edit-metadata" />
+            <action index="175" id="manageassoc" />
+            <action index="180" id="document-change-type" />
+            <action index="190" id="document-manage-granular-permissions" />
+            <action index="200" id="document-manage-repo-permissions" />
+            <action index="205" id="document-manage-aspects" />
+            <action index="210" id="document-copy-to" />
+            <action index="220" id="document-move-to" />
+            <action index="230" id="document-delete" />
+            <action index="240" id="document-cloud-sync" />
+            <action index="250" id="document-cloud-unsync" />
+            <action index="260" id="document-view-in-cloud" />
+            <action index="270" id="document-request-sync"/>
+            <action index="280" id="document-view-in-source-repository" />
+
+            <action index="290" id="document-view-original" />
+            <action index="300" id="document-view-working-copy" />
+            <action index="330" id="document-assign-workflow" />
+
+            <action index="370" id="document-view-googlemaps" />
+        </actionGroup>
+    </actionGroups>
+  </config>
+
+</alfresco-config>
